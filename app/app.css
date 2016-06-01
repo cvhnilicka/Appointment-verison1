@@ -1,0 +1,154 @@
+/* app css stylesheet */
+body {
+   font-family:helvetica,arial,geneva,sans-serif;
+    color:#000000;
+    background: #CACCBD;
+    margin: 0;
+    font-size:12px;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu {
+  margin: 0;
+  background-color: #990000;
+    padding: 2.5% 0;
+}
+.menu > li {
+  padding: 7% 0;
+  display: inline;
+
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.menu li a:link, .menu li a:visited {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  padding: 14px 25px;
+  text-align: center;
+}
+
+.menu li a:hover {
+  color: red;
+}
+
+.intro p {
+  font-size: 200%;
+  width: 55%;
+  margin: 0 auto;
+}
+
+div.outer {
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+
+
+div.middle {
+  display: table-row;
+  margin: 33% 0;
+
+}
+
+div.inner {
+  margin: 12% auto;
+  display: table-cell;
+    text-align: center;
+}
+
+div.inner a {
+  display: inline-block;
+  border-radius: 10%;
+  font-size: 150%;
+  width: auto;
+  text-decoration: none;
+  margin: 7.5% 4%;
+  color: black;
+  background-color: #ff3333;
+  padding: 14px 25px;
+}
+
+div.inner a:hover {
+  color: white;
+}
+
+div.laptop-desktop {
+  display: none;
+}
+
+div.repair-type {
+  display: none;
+}
+
+div.mobile-type {
+  display: none;
+}
+
+div.mobile-type .inner a {
+  display: inline-block;
+  width: 66%;
+}
+
+div.laptop-desktop .inner a {
+  margin-left: 80%;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  border-radius: 25%;
+}
+
+div.repair-type .inner a {
+  margin-left: 80%;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  border-radius: 25%;
+}
+
+div.input-section {
+ /* background-color: black;*/
+  display: none;
+  width: 55%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+div.user-information {
+  display: inline-block;
+  width: 48%;
+  float: left;
+}
+
+div.appointment-description {
+  display: inline-block;
+  width: 48%;
+  float: right;
+}
+#user-name {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
