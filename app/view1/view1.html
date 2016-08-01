@@ -1,1 +1,172 @@
-<p>This is the partial for view 1.</p>
+ <script type="text/javascript" src="./view1/jcontrol.js"></script>
+
+
+ <div class="week">
+ 	<table class="weektable">
+ 		<tr class="weekdays">
+ 			<th>
+ 				<div id="threshold">
+ 				Threshold: <input id="minimum" type="number" name="quantity" min="1" max="8" value=3><br>
+ 				<button ng-click="update()">Update</button>
+ 				</div>
+ 			</th>
+ 			<th class="weekday"><button class="firstweek" ng-click="crossRef('week1')" > < </button><a href="#!/monday" ng-model="monday">Monday {{ monday }} </a></th>
+ 			<th class="weekday"><a href="#!/tuesday" ng-model="tuesday">Tuesday {{ tuesday }} </a></th>
+ 			<th class="weekday"><a href="#!/wednesday" ng-model="wednesday">Wednesday {{ wednesday }} </a></th>
+ 			<th class="weekday"><a href="#!/thursday" ng-model="thursday">Thursday {{ thursday }} </a></th>
+ 			<th class="weekday lastcell"><a href="#!/friday" ng-model="friday">Friday {{ friday }} </a><button class="secondweek" ng-click="crossRef('week2')"> > </button></th>
+ 		</tr>
+ 		<tr class="row 8:00">
+ 			<td class="td unavail">8:00</td>
+ 			<td class="td Mon8:00 unavail"></td>
+ 			<td class="td Tue8:00 unavail"></td>
+ 			<td class="td Wed8:00 unavail"></td>
+ 			<td class="td Thu8:00 unavail"></td>
+ 			<td class="td Fri8:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 8:30">
+ 			<td class="td unavail">8:30</td>
+ 			<td class="td Mon8:30 unavail"></td>
+ 			<td class="td Tue8:30 unavail"></td>
+ 			<td class="td Wed8:30 unavail"></td>
+ 			<td class="td Thu8:30 unavail"></td>
+ 			<td class="td Fri8:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 9:00">
+ 			<td class="td unavail">9:00</td>
+ 			<td class="td Mon9:00 unavail"></td>
+ 			<td class="td Tue9:00 unavail"></td>
+ 			<td class="td Wed9:00 unavail"></td>
+ 			<td class="td Thu9:00 unavail"></td>
+ 			<td class="td Fri9:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 9:30"> 
+ 			<td class="td unavail">9:30</td>
+ 			<td class="td Mon9:30 unavail"></td>
+ 			<td class="td Tue9:30 unavail"></td>
+ 			<td class="td Wed9:30 unavail"></td>
+ 			<td class="td Thu9:30 unavail"></td>
+ 			<td class="td Fri9:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 10:00">
+ 			<td class="td unavail">10:00</td>
+ 			<td class="td Mon10:00 unavail"></td>
+ 			<td class="td Tue10:00 unavail"></td>
+ 			<td class="td Wed10:00 unavail"></td>
+ 			<td class="td Thu10:00 unavail"></td>
+ 			<td class="td Fri10:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 10:30">
+ 			<td class="td unavail">10:30</td>
+ 			<td class="td Mon10:30 unavail"></td>
+ 			<td class="td Tue10:30 unavail"></td>
+ 			<td class="td Wed10:30 unavail"></td>
+ 			<td class="td Thu10:30 unavail"></td>
+ 			<td class="td Fri10:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 11:00">
+ 			<td class="td unavail">11:00</td>
+ 			<td class="td Mon11:00 unavail"></td>
+ 			<td class="td Tue11:00 unavail"></td>
+ 			<td class="td Wed11:00 unavail"></td>
+ 			<td class="td Thu11:00 unavail"></td>
+ 			<td class="td Fri11:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 11:30">
+ 			<td class="unavail">11:30</td>
+ 			<td class="td Mon11:30 unavail"></td>
+ 			<td class="td Tue11:30 unavail"></td>
+ 			<td class="td Wed11:30 unavail"></td>
+ 			<td class="td Thu11:30 unavail"></td>
+ 			<td class="td Fri11:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 12:00">
+ 			<td class="unavail">12:00</td>
+ 			<td class="td Mon12:00 unavail"></td>
+ 			<td class="td Tue12:00 unavail"></td>
+ 			<td class="td Wed12:00 unavail"></td>
+ 			<td class="td Thu12:00 unavail"></td>
+ 			<td class="td Fri12:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 12:30">
+ 			<td class="unavail">12:30</td>
+ 			<td class="td Mon12:30 unavail"></td>
+ 			<td class="td Tue12:30 unavail"></td>
+ 			<td class="td Wed12:30 unavail"></td>
+ 			<td class="td Thu12:30 unavail"></td>
+ 			<td class="td Fri12:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 13:00">
+ 			<td class="unavail">1:00</td>
+ 			<td class="td Mon13:00 unavail"></td>
+ 			<td class="td Tue13:00 unavail"></td>
+ 			<td class="td Wed13:00 unavail"></td>
+ 			<td class="td Thu13:00 unavail"></td>
+ 			<td class="td Fri13:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 13:30">
+ 			<td class="unavail">1:30</td>
+ 			<td class="td Mon13:30 unavail"></td>
+ 			<td class="td Tue13:30 unavail"></td>
+ 			<td class="td Wed13:30 unavail"></td>
+ 			<td class="td Thu13:30 unavail"></td>
+ 			<td class="td Fri13:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 14:00">
+ 			<td class="unavail">2:00</td>
+ 			<td class="td Mon14:00 unavail"></td>
+ 			<td class="td Tue14:00 unavail"></td>
+ 			<td class="td Wed14:00 unavail"></td>
+ 			<td class="td Thu14:00 unavail"></td>
+ 			<td class="td Fri14:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 14:30">
+ 			<td class="unavail">2:30</td>
+ 			<td class="td Mon14:30 unavail"></td>
+ 			<td class="td Tue14:30 unavail"></td>
+ 			<td class="td Wed14:30 unavail"></td>
+ 			<td class="td Thu14:30 unavail"></td>
+ 			<td class="td Fri14:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 15:00">
+ 			<td class="unavail">3:00</td>
+ 			<td class="td Mon15:00 unavail"></td>
+ 			<td class="td Tue15:00 unavail"></td>
+ 			<td class="td Wed15:00 unavail"></td>
+ 			<td class="td Thu15:00 unavail"></td>
+ 			<td class="td Fri15:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 15:30">
+ 			<td class="unavail">3:30</td>
+ 			<td class="td Mon15:30 unavail"></td>
+ 			<td class="td Tue15:30 unavail"></td>
+ 			<td class="td Wed15:30 unavail"></td>
+ 			<td class="td Thu15:30 unavail"></td>
+ 			<td class="td Fri15:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 16:00">
+ 			<td class="unavail">4:00</td>
+ 			<td class="td Mon16:00 unavail"></td>
+ 			<td class="td Tue16:00 unavail"></td>
+ 			<td class="td Wed16:00 unavail"></td>
+ 			<td class="td Thu16:00 unavail"></td>
+ 			<td class="td Fri16:00 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 16:30">
+ 			<td class="unavail">4:30</td>
+ 			<td class="td Mon16:30 unavail"></td>
+ 			<td class="td Tue16:30 unavail"></td>
+ 			<td class="td Wed16:30 unavail"></td>
+ 			<td class="td Thu16:30 unavail"></td>
+ 			<td class="td Fri16:30 unavail lastcell"></td>
+ 		</tr>
+ 		<tr class="row 17:00">
+ 			<td class="unavail">5:00</td>
+ 			<td class="td Mon17:00 unavail"></td>
+ 			<td class="td Tue17:00 unavail"></td>
+ 			<td class="td Wed17:00 unavail"></td>
+ 			<td class="td Thu17:00 unavail"></td>
+ 			<td class="td Fri17:00 unavail lastcell"></td>
+ 		</tr>
+ 	</table>
+ </div>

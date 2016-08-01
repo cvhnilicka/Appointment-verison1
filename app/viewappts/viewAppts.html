@@ -1,0 +1,12 @@
+
+<div>
+	<ul class="appointments">
+		<li ng-repeat="appointment in appointments">
+			<h4> {{ appointment.name }}  {{ appointment.date }} </h4>
+			
+			<p>{{ appointment.description }} </p> <p> {{ appointment.consult_type }} consultaion on a {{ appointment.device_brand }} {{ appointment.device_type }} </p>
+			<br>
+			<button ng-attr-id = "{{ appointment._id }}"  data-ng-click="deleteAppt($event)">Delete</button>
+		</li>
+	</ul>
+</div>

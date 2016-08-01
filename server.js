@@ -2,6 +2,7 @@
 var express = require('express');
 var app = express(); 						// create our app w/ express
 var mongoose = require('mongoose'); 				// mongoose for mongodb
+var mysql = require('mysql');
 var port = process.env.PORT || 8080; 				// set the port
 var database = require('./config/database'); 			// load the database config
 var morgan = require('morgan');
@@ -10,6 +11,9 @@ var methodOverride = require('method-override');
 
 // configuration ===============================================================
 mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
+
+
+
 
 app.use(express.static(__dirname + '/app')); 		// set the static files location /public/img will be /img for users
 app.use(morgan('dev')); // log every request to the console

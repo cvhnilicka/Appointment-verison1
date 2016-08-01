@@ -1,59 +1,84 @@
   <script type="text/javascript" src="./view2/jquery_controller.js"></script>
-<div class="intro">
-	<p>
-		Let us know a little about your problem to help us prepare for your appt.
-	</p>
-</div>
-<div class="outer">
-	<div class="middle">
-		<div class="inner">
-			  <a href="#!/view2" class="devicetype" id="laptop" data-ng-click="ShowId($event)">Laptop</a>
-		</div>
-			<div class="inner">
-			 <a href="#!/view2" class="devicetype" id="desktop" data-ng-click="ShowId($event)">Desktop</a>
-		</div>
-			<div class="inner">
-			 <a href="#!/view2" class="devicetype" id="mobile" data-ng-click="ShowId($event)">Mobile Device</a>
-		</div>
-	</div>
-	<div class="middle laptop-desktop">
-		<div class="inner">
-		 <a href="#!/view2" class="brand" id="apple" data-ng-click="ShowId($event)">Apple</a>
-		</div>
-		<div class="inner">
-		 <a href="#!/view2" class="brand" id="pc" data-ng-click="ShowId($event)">PC</a>
-		</div>
-	</div>	
-	<div class="middle mobile-type">
-		<div class="inner">
-		 <a href="#!/view2" class="brand" id="apple" data-ng-click="ShowId($event)">Apple</a>
-		</div>
-		<div class="inner">
-		 <a href="#!/view2" class="brand" id="android" data-ng-click="ShowId($event)">Android</a>
-		</div>
-		<div class="inner">
-		 <a href="#!/view2" class="brand" id="windows" data-ng-click="ShowId($event)">Windows</a>
-		</div>
-	</div>	
-	<div class="middle repair-type">
-		<div class="inner">
-		 <a href="#!/view2" class="consult-type" id="software" data-ng-click="ShowId($event)">Software</a>
-		</div>
-		<div class="inner">
-		 <a href="#!/view2" class="consult-type" id="hardware" data-ng-click="ShowId($event)">Hardware</a>
-		</div>
-	</div>
-</div>
-<div class="input-section">
+  <div class="intro">
+  	<p>
+  		Let us know a little about your problem to help us prepare for your appt.
+  	</p>
+  </div>
+  <div class="outer">
+  	<div class="middle">
+  		<div class="inner">
+  			<button class="devicetype" id="laptop" data-ng-click="ShowId($event)">Laptop</button>
+  			<!-- <a href="#!/view2" class="devicetype" id="laptop" data-ng-click="ShowId($event)">Laptop</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="devicetype" id="desktop" data-ng-click="ShowId($event)">Desktop</button>
+  			<!-- <a href="#!/view2" class="devicetype" id="desktop" data-ng-click="ShowId($event)">Desktop</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="devicetype" id="mobile" data-ng-click="ShowId($event)">Mobile Device</button>
+  			<!--  <a href="#!/view2" class="devicetype" id="mobile" data-ng-click="ShowId($event)">Mobile Device</a> -->
+  		</div>
+  	</div>
+  	<div class="middle laptop-desktop">
+  		<div class="inner">
+  			<button class="brand" id="apple" data-ng-click="ShowId($event)">Apple</button>
+  			<!-- <a href="#!/view2" class="brand" id="apple" data-ng-click="ShowId($event)">Apple</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="brand" id="pc" data-ng-click="ShowId($event)">PC</button>
+  			<!-- <a href="#!/view2" class="brand" id="pc" data-ng-click="ShowId($event)">PC</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="brand" id="other" data-ng-click="ShowId($event)">Other</button>
+  			<!-- <a href="#!/view2" class="brand" id="pc" data-ng-click="ShowId($event)">PC</a> -->
+  		</div>
+  	</div>	
+  	<div class="middle mobile-type">
+  		<div class="inner">
+  			<button class="brand" id="apple" data-ng-click="ShowId($event)">Apple</button>
 
-	<div class="user-information">
-		First Name: <input type="text" id="firstName" name="firstName" placeholder="First name "><br>
-		Last Name: <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
-		Date: &nbsp &nbsp &nbsp &nbsp &nbsp <input id="date" type="date" name="date">
-	</div>
-	<div class="appointment-description">
-		<textarea rows="12" cols="150" id="description" placeholder="Provide a brief description on the reason for this appointment"></textarea>
-	</div>
-	<a href="#!/view2" class="submit" id="hardware" data-ng-click="ShowId($event)">Hardware</a>
-		
-	</div>	
+  			<!-- <a href="#!/view2" class="brand" id="apple" data-ng-click="ShowId($event)">Apple</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="brand" id="android" data-ng-click="ShowId($event)">Android</button>
+  			<!-- <a href="#!/view2" class="brand" id="android" data-ng-click="ShowId($event)">Android</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="brand" id="windows" data-ng-click="ShowId($event)">Windows</button>
+  			<!--  <a href="#!/view2" class="brand" id="windows" data-ng-click="ShowId($event)">Windows</a> -->
+  		</div>
+  	</div>	
+  	<div class="middle repair-type">
+  		<div class="inner">
+  			<button  class="consult-type" id="software" data-ng-click="ShowId($event)">Software</button>
+  			<!-- <a href="#!/view2" class="consult-type" id="software" data-ng-click="ShowId($event)">Software</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="consult-type" id="hardware" data-ng-click="ShowId($event)">Hardware</button>
+  			<!-- <a href="#!/view2" class="consult-type" id="hardware" data-ng-click="ShowId($event)">Hardware</a> -->
+  		</div>
+  		<div class="inner">
+  			<button class="consult-type" id="unknown" data-ng-click="ShowId($event)">Unknown</button>
+  			<!-- <a href="#!/view2" class="consult-type" id="hardware" data-ng-click="ShowId($event)">Hardware</a> -->
+  		</div>
+  	</div>
+  </div>
+  <div id="wrapperU">
+  <div class="input-section">
+
+  	<div class="user-information">
+  		First Name: <input type="text" id="firstName" name="firstName" placeholder="First name "><br>
+  		Last Name: <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
+  		Email: <input type="text" id="email" name="email" placeholder="Email Address"><br>
+  		<h2 id="date">Date: </h2>
+  		<h2 id="time">Time: </h2>
+
+
+  	</div>
+  	<div class="appointment-description">
+  		<textarea rows="12"  id="description" placeholder="Provide a brief description on the reason for this appointment"></textarea>
+  	</div>
+  	<a href="#!/view2" class="submit" id="hardware" ng-click="reserveAppt()">Reserve Appointment</a>
+
+  </div>	
+  </div>

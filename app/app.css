@@ -1,10 +1,10 @@
 /* app css stylesheet */
 body {
-   font-family:helvetica,arial,geneva,sans-serif;
-    color:#000000;
-    background: #CACCBD;
-    margin: 0;
-    font-size:12px;
+ font-family:helvetica,arial,geneva,sans-serif;
+ color:#000000;
+ background: #CACCBD;
+ margin: 0;
+ font-size:12px;
 }
 .menu {
   list-style: none;
@@ -16,7 +16,7 @@ body {
 .menu {
   margin: 0;
   background-color: #990000;
-    padding: 2.5% 0;
+  padding: 2.5% 0;
 }
 .menu > li {
   padding: 7% 0;
@@ -49,6 +49,10 @@ body {
   color: red;
 }
 
+#wrapperU {
+  text-align: center;
+}
+
 .intro p {
   font-size: 200%;
   width: 55%;
@@ -65,30 +69,68 @@ div.outer {
 
 div.middle {
   display: table-row;
-  margin: 33% 0;
+  width: auto;
+  margin-left: 35%;
 
+}
+
+div.middle .inner button {
+  margin-left: 35%;
 }
 
 div.inner {
+
   margin: 12% auto;
   display: table-cell;
-    text-align: center;
+  text-align: center;
 }
 
-div.inner a {
-  display: inline-block;
-  border-radius: 10%;
+div.inner .devicetype {
+  width: 32%;
+}
+
+div.inner button {
+  display: block;
+  border-radius: 5%;
   font-size: 150%;
   width: auto;
   text-decoration: none;
   margin: 7.5% 4%;
   color: black;
-  background-color: #ff3333;
+  background-color: white;
   padding: 14px 25px;
 }
 
-div.inner a:hover {
-  color: white;
+div.inner button.grayed {
+  display: table-cell;
+  border-radius: 5%;
+  font-size: 150%;
+  width: auto;
+  text-decoration: none;
+  margin: 7.5% 4%;
+  color: gray;
+  opacity: 0.1;
+  background-color: gray;
+  padding: 14px 25px;
+}
+
+div.inner button.grayed:hover {
+  opacity: 1.0;
+  display: table-cell;
+  border-radius: 5%;
+  font-size: 150%;
+  width: auto;
+  text-decoration: none;
+  margin: 7.5% 4%;
+  color: #d8534e;
+  background-color: white;
+  padding: 14px 25px;
+  box-shadow: 0px 0px 20px #888888;
+}
+
+div.inner button:hover {
+  color: #d8534e;
+  box-shadow: 0px 0px 20px #888888;
 }
 
 div.laptop-desktop {
@@ -103,34 +145,92 @@ div.mobile-type {
   display: none;
 }
 
-div.mobile-type .inner a {
-  display: inline-block;
-  width: 66%;
+div.mobile-type .inner button {
+  background-color: #d8534e;
+  color: black;
+  margin-left: 35%;
+  text-align: center;
+  display: block;
+  width: 32%;
+  border-radius: 5%;
+/* background-color: #d8534e;
+ display: block;
+ width: 32%;*/
+}
+div.mobile-type .inner button.grayed {
+  background-color: #d8534e;
+  color: black;
+  margin-left: 35%;
+  text-align: center;
+  display: block;
+  width: 32%;
+  border-radius: 5%;
+/* background-color: #d8534e;
+ display: block;
+ width: 32%;*/
 }
 
-div.laptop-desktop .inner a {
-  margin-left: 80%;
-  text-align: center;
-  display: inline-block;
-  width: 50%;
-  border-radius: 25%;
+div.mobile-type .inner button:hover {
+  color: white;
+  box-shadow: 0px 0px 20px #888888;
+}
+div.mobile-type .inner button.grayed:hover {
+  color: white;
+  box-shadow: 0px 0px 20px #888888;
 }
 
-div.repair-type .inner a {
-  margin-left: 80%;
+div.laptop-desktop .inner button {
+  background-color: #d8534e;
+  color: black;
+  margin-left: 35%;
   text-align: center;
-  display: inline-block;
-  width: 50%;
-  border-radius: 25%;
+  display: block;
+  width: 32%;
+  border-radius: 5%;
+}
+
+div.laptop-desktop .inner button.grayed {
+  background-color: #d8534e;
+  color: black;
+  margin-left: 35%;
+  text-align: center;
+  display: block;
+  width: 32%;
+  border-radius: 5%;
+}
+
+div.laptop-desktop .inner button:hover {
+  color: white;
+  box-shadow: 0px 0px 20px #888888;
+
+}
+div.laptop-desktop .inner button.grayed:hover {
+  color: white;
+  box-shadow: 0px 0px 20px #888888;
+
+}
+div.repair-type .inner button {
+
+  margin-left: 35%;
+  text-align: center;
+  display: block;
+  width: 32%;
+  border-radius: 5%;
 }
 
 div.input-section {
- /* background-color: black;*/
+  /*background-color: black;*/
   display: none;
-  width: 55%;
-  height: 30%;
-  margin: 0 auto;
+  width: 60%;
+  clear: both;
+  text-align: left;
+  /*height: 30%;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: 0 auto;*/
 }
+
+
 
 div.user-information {
   display: inline-block;
@@ -143,6 +243,12 @@ div.appointment-description {
   width: 48%;
   float: right;
 }
+
+#description {
+  display: inline-block;
+  width: 100%
+}
+
 #user-name {
   color: black;
   display: inline-block;
@@ -150,5 +256,148 @@ div.appointment-description {
   margin: 0 auto;
 }
 
+button.grayed {
+  background-color: gray;
+  color: gray;
+  display: none;
+}
+
+div.week {
+  display: none;
+  /*background-color: black;*/
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+table.weektable {
+ /*display: none;*/
+ margin-left:auto; 
+ margin-right:auto;
+ width: 66%;
+ /* background-color: black;*/
+
+}
+
+table.weektable.blackout {
+ /*display: none;*/
+ margin-left:2%; 
+ /*margin-right:auto;*/
+ /*height: 66%;*/
+ width: 66%;
+ /* background-color: black;*/
+
+}
+
+table.weektable .row {
+  display: none;
+
+}
+
+table.weektable th, .unavail {
+  padding: .5%;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+table.weektable .avail {
+  background-color: #70DB70;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
 
 
+table.weektable .weekday {
+  padding: 10px;
+  text-align: center;
+}
+
+.weekday.lastcell {
+  border-right: none;
+}
+
+.lastcell {
+  border-right: none;
+}
+
+table.weektable th a {
+  text-decoration: none;
+  color: white;
+  background-color: #ac0809;
+  padding: 5px 10px;
+}
+
+table.weektable tr, td {
+
+  text-align: center;
+}
+
+.linker {
+  color: black;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  font-size: 1.75em;
+  text-decoration: none;
+}
+
+/*.linker:hover {
+  background-color: #5CB85C;
+  }*/
+
+  table.weektable .avail:hover{
+    background-color: #5CB85C;
+  }
+
+  #range {
+    display: inline-block;
+    width: auto;
+    /*background-color: black;*/
+  }
+  #range td, th, tr {
+   border: none;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+ .selection {
+  display:block;
+  cursor:pointer;
+  padding:0px;
+  height:20px;
+  width:90px;
+  vertical-align:middle;
+}
+
+.selection_on {
+  background-color:#0B0;
+  margin: 1px;
+}
+
+div.right.week {
+  margin-right: 35%;
+  margin-top: 2%;
+  clear: both;
+  height: auto;
+  display: inline-block;
+  float: right;
+}
+
+button.firstweek {
+  opacity: 0;
+}
+
+
+
+/*#numblock {
+  margin-right: 40%;
+  margin-top: 0%;
+  clear: both;
+  display: inline-block;
+  float: right;
+  }*/

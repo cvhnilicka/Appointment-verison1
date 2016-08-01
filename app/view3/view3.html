@@ -1,0 +1,164 @@
+<script type="text/javascript" src="./view3/script.js"></script>
+
+<table id="range" border="1" cellspacing="1px"><tr id='tablehead'><th style='visibility:hidden'>&nbsp;</th>
+<!-- <th align='center'>Sunday</th>
+<th align='center'>Monday</th>
+<th align='center'>Tuesday</th>
+<th align='center'>Wednesday</th>
+<th align='center'>Thursday</th>
+<th align='center'>Friday</th>
+<th align='center'>Saturday</th> -->
+</tr><tr id='tableheadfixed'><th style='visibility:hidden'>&nbsp;</th>
+
+<th align='center'>Monday <span id="mon"></span></th>
+<th align='center'>Tuesday <span id="tue"></span></th>
+<th align='center'>Wednesday <span id="wed"></span></th>
+<th align='center'>Thursday <span id="thu"></span></th>
+<th align='center'>Friday <span id="fri"></span></th>
+
+<tr class="row"><td class="row_label"><span>8:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_800"></div></td>
+	<td><div class="selection selection_on not" id="b_2_800"></div></td>
+	<td><div class="selection selection_on not" id="b_3_800"></div></td>
+	<td><div class="selection selection_on not" id="b_4_800"></div></td>
+	<td><div class="selection selection_on not" id="b_5_800"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>8:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_830"></div></td>
+	<td><div class="selection selection_on not" id="b_2_830"></div></td>
+	<td><div class="selection selection_on not" id="b_3_830"></div></td>
+	<td><div class="selection selection_on not" id="b_4_830"></div></td>
+	<td><div class="selection selection_on not" id="b_5_830"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>9:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_900"></div></td>
+	<td><div class="selection selection_on not" id="b_2_900"></div></td>
+	<td><div class="selection selection_on not" id="b_3_900"></div></td>
+	<td><div class="selection selection_on not" id="b_4_900"></div></td>
+	<td><div class="selection selection_on not" id="b_5_900"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>9:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_930"></div></td>
+	<td><div class="selection selection_on not" id="b_2_930"></div></td>
+	<td><div class="selection selection_on not" id="b_3_930"></div></td>
+	<td><div class="selection selection_on not" id="b_4_930"></div></td>
+	<td><div class="selection selection_on not" id="b_5_930"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>10:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1000"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1000"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1000"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1000"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1000"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>10:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1030"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1030"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1030"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1030"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1030"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>11:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1100"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1100"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1100"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1100"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1100"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>11:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1130"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1130"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1130"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1130"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1130"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>12:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1200"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1200"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1200"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1200"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1200"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>12:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1230"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1230"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1230"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1230"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1230"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>13:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1300"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1300"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1300"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1300"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1300"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>13:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1330"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1330"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1330"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1330"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1330"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>14:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1400"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1400"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1400"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1400"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1400"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>14:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1430"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1430"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1430"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1430"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1430"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>15:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1500"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1500"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1500"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1500"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1500"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>15:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1530"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1530"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1530"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1530"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1530"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>16:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1600"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1600"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1600"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1600"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1600"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>16:30</span></td>
+	<td><div class="selection selection_on not" id="b_1_1630"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1630"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1630"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1630"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1630"></div></td>
+</tr>
+<tr class="row"><td class="row_label"><span>17:00</span></td>
+	<td><div class="selection selection_on not" id="b_1_1700"></div></td>
+	<td><div class="selection selection_on not" id="b_2_1700"></div></td>
+	<td><div class="selection selection_on not" id="b_3_1700"></div></td>
+	<td><div class="selection selection_on not" id="b_4_1700"></div></td>
+	<td><div class="selection selection_on not" id="b_5_1700"></div></td>
+</tr>
+</table>  
+
+
+<div class = "right week">
+	<input type="week" name="week" id="weekpicker" ng-click="updateWeek()">
+	<h2 id="numblock">Hours Blocked out: <span id="count">0</span></h2>
+	<button id="submit" onclick="saveBlackout()">Submit</button>
+</div>
+
+
+
+
+
