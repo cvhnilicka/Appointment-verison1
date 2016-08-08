@@ -298,12 +298,19 @@ table.weektable th, .unavail {
   text-align: center;
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
+    border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
 }
 
 table.weektable .avail {
-  background-color: #70DB70;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  /*background-color: #70DB70;*/
+    border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-bottom: 1px solid  #ddd;
+  border-right: 1px solid  #ddd;
+  margin: .5%;
 }
 
 
@@ -325,6 +332,29 @@ table.weektable th a {
   color: white;
   background-color: #ac0809;
   padding: 5px 10px;
+
+
+
+
+background: #ac0809;
+  background: -moz-linear-gradient(top,#ac0809 0%,#B50708 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#25A6E1),color-stop(100%,#B50708));
+  background: -webkit-linear-gradient(top,#ac0809 0%,#B50708 100%);
+  background: -o-linear-gradient(top,#ac0809 0%,#B50708 100%);
+  background: -ms-linear-gradient(top,#ac0809 0%,#B50708 100%);
+  background: linear-gradient(top,#ac0809 0%,#B50708 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#B50708',GradientType=0);
+  /*padding:8px 13px;*/
+  /*color:#fff;*/
+  font-family:'Helvetica Neue',sans-serif;
+  /*font-size:17px;*/
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border:1px solid #8A0304;
+
+
+
 }
 
 table.weektable tr, td {
@@ -333,13 +363,34 @@ table.weektable tr, td {
 }
 
 .linker {
+  /*background:#2ECC71;*/
+  background:-moz-linear-gradient(top,#26C281 0%,#2ECC71 100%);
+  background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#26C281),color-stop(100%,#2ECC71));
+  background:-webkit-linear-gradient(top,#26C281 0%,#2ECC71 100%);
+  background:-o-linear-gradient(top,#26C281 0%,#2ECC71 100%);
+  background:-ms-linear-gradient(top,#26C281 0%,#2ECC71 100%);
+  background:linear-gradient(top,#26C281 0%,#2ECC71 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#26C281', endColorstr='#2ECC71',GradientType=0);
+  /*padding:10px 15px;*/
+  /*color:#fff;*/
+  font-family:'Helvetica Neue',sans-serif;
+  /*font-size:16px;*/
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  /*border:1px solid white;*/
+
+
+
+
+
   color: black;
   display: inline-block;
   height: 100%;
   width: 100%;
   top: 50%;
   text-align: center;
-  font-size: 1.75em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -348,7 +399,15 @@ table.weektable tr, td {
   }*/
 
   table.weektable .avail:hover{
-    background-color: #5CB85C;
+    /*background-color: #5CB85C;*/
+    color: white;
+    border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  }
+
+  .linker:hover{
+    color: white;
   }
 
   #range {

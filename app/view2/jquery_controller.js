@@ -96,7 +96,7 @@ $(document).ready(function(){
 			__secondtime = arr[0] + ":15"
 		}
 		__times = __time + "-" + __secondtime
-		alert(__date)
+		// alert(__date)
 		alert("You have chosen " + __times + " on " + __date.getDate() + " " + month[__date.getMonth()])
 
 		// alert("You have chosen " + date + "for your Appointment")
@@ -204,14 +204,14 @@ $(document).ready(function() {
 		var _num_agents = __schedule[__time]
 		var ran = Math.floor((Math.random() * _num_agents.length) + 1);
 		var agent = _num_agents[ran-1]
-		debugger;
+		// debugger;
 		name = $("#firstName").val() + " " + $("#lastName").val();
 		description = $("#description").val();
 		email = $("#email").val();
 		
 		//console.log(device_type + device_brand + consult_type + name + description + date);
 
-		alert(__times)
+		// alert(__times)
 		$.ajax({
 			type: "POST",
 			url: "/api/appointments",
@@ -238,7 +238,7 @@ $(document).ready(function() {
 					}
 				})
 				// document.cookie = null;
-				// alert("Appointment for " + cookie + " is successfully reserved.\n Description: " + $("#description").val() + "\n" + ($("#firstName").val() + " " + $("#lastName").val()))
+				alert("Appointment for " + cookie + " is successfully reserved.\n Description: " + $("#description").val() + "\n" + ($("#firstName").val() + " " + $("#lastName").val()))
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
 

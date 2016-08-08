@@ -39,11 +39,27 @@ function getDateOfISOWeek(w, y) {
 }
 
 var setWeek = function(week, year){
+  debugger;
 
   var days = ["#mon", "#tue", "#wed", "#thu", "#fri"];
 
+
+
   var weekdate = getDateOfISOWeek(week, year)
   thisweek = weekdate;
+   $.ajax({
+    type: "GET",
+    url: "/api/blackouts/:blackout_id",
+    data: {
+      date: weekdate
+    },
+    success: function(d){
+      console.log(d)
+    },
+    error: function(jqXHR, textStatus, errorThrown){
+      console.log("SHIT!")
+    }
+  })
   dates = [];
   var mo = new Date(year, weekdate.getMonth(), weekdate.getDate())
   dates.push(mo);
@@ -255,6 +271,12 @@ $(document).ready(function(){
   document.getElementById("weekpicker").defaultValue = year + "-W" + week;
   setWeek(week, year);
 })
+
+
+// var updateWeek = function(){
+//     var weekpicked = document.getElementById("weekpicker").value
+//     debugger;
+// }
 
 var updateCounter = function(){
 

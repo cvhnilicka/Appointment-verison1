@@ -3,7 +3,7 @@ var Blackout = require('./models/blackout')
 var mysql = require('mysql');
 var nodemailer = require('nodemailer');
 var times = ['8:00','8:30','9:00','9:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00',
-            '16:30','17:00','17:30'];
+'16:30','17:00','17:30'];
 
 
 var connection = mysql.createConnection({
@@ -277,36 +277,36 @@ module.exports = function (app) {
 
             })
 
-        app.put('/api/schedule', function(req, res){
-            var __time1 = req.body.time1
-            var __time2 = req.body.time2
-            var agent = req.body.agent
-            var __date = new Date(req.body.date)
-            var __firstname = agent.split(" ")[0].capitalize()
-            var __lastname = agent.split(" ")[1].capitalize()
-            var _mon = __date.getMonth() + 1
-            if(_mon.toString().length === 1){
-                _mon = "0" + _mon
-            }
-            var _day = __date.getDate()
-            if(_day.toString().length === 1){
-                _day = "0" + _day
-            }
-            var _date_convert = __date.getFullYear() + "-" + _mon + "-" + _day
-            var query = "UPDATE SS_Schedule as sch \n" +
-                        "INNER JOIN SS_Employee as emp on emp.Employee_ID = sch.agent\n" +  
-                        "SET sch.`" + __time1 + "`=" + 64 + ", sch.`" + __time2 + "`=" + 64 +"\n" +
-                        "WHERE emp.Last_Name='" + __lastname + "'\n" +
-                        "AND emp.First_Name='" + __firstname + "'\n" +
-                        "AND sch.`date`='" + _date_convert + "'"
-            console.log(query)
-            connection.query(query, function(err, data){
-                if(err)
-                    console.log(err)
-                console.log(data)
-            })
+app.put('/api/schedule', function(req, res){
+    var __time1 = req.body.time1
+    var __time2 = req.body.time2
+    var agent = req.body.agent
+    var __date = new Date(req.body.date)
+    var __firstname = agent.split(" ")[0].capitalize()
+    var __lastname = agent.split(" ")[1].capitalize()
+    var _mon = __date.getMonth() + 1
+    if(_mon.toString().length === 1){
+        _mon = "0" + _mon
+    }
+    var _day = __date.getDate()
+    if(_day.toString().length === 1){
+        _day = "0" + _day
+    }
+    var _date_convert = __date.getFullYear() + "-" + _mon + "-" + _day
+    var query = "UPDATE SS_Schedule as sch \n" +
+    "INNER JOIN SS_Employee as emp on emp.Employee_ID = sch.agent\n" +  
+    "SET sch.`" + __time1 + "`=" + 64 + ", sch.`" + __time2 + "`=" + 64 +"\n" +
+    "WHERE emp.Last_Name='" + __lastname + "'\n" +
+    "AND emp.First_Name='" + __firstname + "'\n" +
+    "AND sch.`date`='" + _date_convert + "'"
+    console.log(query)
+    connection.query(query, function(err, data){
+        if(err)
+            console.log(err)
+        console.log(data)
+    })
 
-        })
+})
 
 
         // create appointment and send back to all appointments in database
@@ -345,13 +345,27 @@ module.exports = function (app) {
             });
         });
 
+        app.get("/api/blackouts/:blackout_id", function(req, res){
+            // Blackout.findOne()
 
+
+
+            // Blackout.find({
+            //     date: req.params.date
+            // }, function(err, blackout){
+            //     if(err)
+            //         console.log(err)
+            //     res.json(blackout)
+            // })
+        })
 
 
         // SECTION TO HANDLE BLACKOUT CALLS
         app.get('/api/blackouts', function(req, res){
             getBlackouts(res);
         });
+
+        
 
         app.post('/api/blackouts', function(req, res){
             Blackout.create({

@@ -29,6 +29,17 @@
  			ISOweekStart.setDate(simple.getDate() + 8 - simple.getDay());
  		return ISOweekStart;
  	}
+ 		var time_convert = {
+	"13:00" : "1:00",
+	"13:30" : "1:30",
+	"14:00" : "2:00",
+	"14:30" : "2:30",
+	"15:00" : "3:00",
+	"15:30" : "3:30",
+	"16:00" : "4:00",
+	"16:30" : "4:30",
+	"17:00" : "5:00"
+}
  	var __num_appts = {};
  	var avail_appt = [];
  	var threshold = 3;
@@ -325,15 +336,23 @@
  		return ISOweekStart;
  	}
 
+ 	var convertTime = function(time) {
+	if(isInArray(time, hightimes)){
+		return time_convert[time] + "pm";
+	}
+	return time + "am";
+}
+
  	var linkThatUp = function(day, time, date, week){
 
  		var elementclass = day + time;
  		var element = document.getElementsByClassName(elementclass);
 
  		if(element[0].children.length < 1){
-
+ 			// debugger;
  			var link = document.createElement("a");
- 			var txt = document.createTextNode(time);
+ 			var t = convertTime(time)
+ 			var txt = document.createTextNode(t);
  			link.appendChild(txt); 
  			var linktxt = "#!/view2"
  			link.setAttribute('href', linktxt);
