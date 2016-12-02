@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.view3',
   'myApp.appointmentsView',
-  'myApp.version'
+  'myApp.version',
+  'myApp.dayViews'
 ]).
 config(['$locationProvider', '$routeProvider', '$httpProvider', function($locationProvider, $routeProvider, $httpProvider) {
   $locationProvider.hashPrefix('!');
@@ -17,5 +18,3 @@ config(['$locationProvider', '$routeProvider', '$httpProvider', function($locati
   $httpProvider.defaults.headers.patch = {};
  // $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
-
-

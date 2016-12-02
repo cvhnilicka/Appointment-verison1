@@ -266,7 +266,7 @@ module.exports = function (app) {
                                     break;
                                     case "Fri" : loadSchedule(data[i], "Fri", schedule, temp);
                                     break;
-                                    default: console.log("error") 
+                                    default: console.log("error", switchcase) 
                                 }
                                 
                             }

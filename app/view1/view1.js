@@ -447,7 +447,7 @@
  					}
  					
  					if(temp_hours[times[t]].length > (threshold + apNum)){
- 						debugger;
+ 						// debugger;
  						var appBefore = __num_appts[times[t-1]]
  						if(appBefore === undefined){
  							appBefore = 0;
@@ -492,7 +492,7 @@
  					var t1 = data[i]["time"].split("-")[0]
  					var t1_5 = times[times.indexOf(t1)+1]
  					var t2 = data[i]["time"].split("-")[1]
- 					debugger;
+ 					// debugger;
  					if(__num_appts[t1] === undefined){
  						__num_appts[t1] = 1;
  					}

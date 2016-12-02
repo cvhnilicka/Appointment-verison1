@@ -12,6 +12,4 @@
 .controller('View3Ctrl', function($scope, $route) {
 
 
-
-
 });

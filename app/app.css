@@ -2,7 +2,7 @@
 body {
  font-family:helvetica,arial,geneva,sans-serif;
  color:#000000;
- background: #CACCBD;
+ /*background: #CACCBD;*/
  margin: 0;
  font-size:12px;
 }
@@ -15,7 +15,11 @@ body {
 
 .menu {
   margin: 0;
-  background-color: #990000;
+  /*background-color: #990000;*/
+  background-image: url("images/navbackground.png");
+  height: auto;
+  width: auto;
+  /*background-image: url("./images/nav-bg.png");*/
   padding: 2.5% 0;
 }
 .menu > li {
@@ -344,8 +348,7 @@ background: #ac0809;
   background: -ms-linear-gradient(top,#ac0809 0%,#B50708 100%);
   background: linear-gradient(top,#ac0809 0%,#B50708 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#B50708',GradientType=0);
-  /*padding:8px 13px;*/
-  /*color:#fff;*/
+
   font-family:'Helvetica Neue',sans-serif;
   /*font-size:17px;*/
   border-radius:4px;
@@ -449,6 +452,32 @@ div.right.week {
 
 button.firstweek {
   opacity: 0;
+}
+
+table.mondaytable {
+  display: block;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+#mondayTitle {
+ text-align: center;
+  color: blue;
+
+}
+
+td.timeview {
+  width: 20%;
+  font-size: 2em;
+}
+
+
+td.slot {
+  /*display: inline-block;*/
+  width: 75%;
+  background-color: red;
 }
 
 
